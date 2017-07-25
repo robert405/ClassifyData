@@ -27,7 +27,7 @@ def main():
             tempTreePath = treePath + "*.jpg"
             allFilePath = glob.glob(tempTreePath)
 
-            treeKind = re.match(".*([A-Z]{3})[0-9].*", treePath).group(1)
+            treeKind = re.match(".*/([A-Z]{3})[0-9]+/.*", treePath).group(1)
 
             print("Kind Of Tree : " + treeKind)
 
