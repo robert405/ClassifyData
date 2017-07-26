@@ -5,7 +5,7 @@ class CropClassifier:
 
     def __init__(self):
 
-        modelPath = "./model-It24944-Acc97"
+        modelPath = "./model-It32048-Acc97"
 
         self.sess = tf.Session()
 
