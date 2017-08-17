@@ -20,3 +20,10 @@ def removeMean(img):
     mean = np.mean(img)
 
     return (img - mean)
+
+def centerReduce(imgs):
+
+    imgs = imgs - 128
+    imgs = imgs / 128
+
+    return imgs

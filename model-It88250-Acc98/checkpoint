@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/martin/Desktop/Free Dev/ClassifyData/model-It88250-Acc98/model.ckpt"
+all_model_checkpoint_paths: "/home/martin/Desktop/Free Dev/ClassifyData/model-It88250-Acc98/model.ckpt"

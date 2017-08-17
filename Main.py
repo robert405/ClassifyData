@@ -42,21 +42,22 @@ def main():
             for file in allFilePath:
 
                 print(file)
+                picName = file.split("/")[-1]
 
                 img = load_image(file)
                 allCrops = getCrops(img)
 
                 for crop in allCrops:
 
-                    cropZero = removeMean(crop)
+                    cropZero = centerReduce(crop)
                     prediction = classifier.getCropClass(cropZero)
                     if (prediction):
-                        save_image(directory + "/crop" + treeKind + str(goodCounterId) + ".jpg", crop)
+                        save_image(directory + "/crop" + str(goodCounterId) + "_" + treeKind + "_" + picName, crop)
 
                         goodCounterId += 1
 
                     else:
-                        save_image("./data/bad/crop"  + str(badCounterId) + ".jpg", crop)
+                        save_image("./data/bad/crop"  + str(badCounterId) + "_" + picName, crop)
 
                         badCounterId += 1
 

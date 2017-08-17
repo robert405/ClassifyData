@@ -1,7 +1,7 @@
 
 def getCrops(img):
 
-    return getMultipleCrop(img, (224, 224), 250)
+    return getMultipleCrop(img, (224, 224), 200)
 
 
 def getCropOfMatrix(img, left, top, shape):
